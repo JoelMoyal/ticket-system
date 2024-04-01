@@ -1,0 +1,390 @@
+:root{
+	--footer-color: rgb(229, 157, 14); 
+	--background-color:  #707070;
+}
+
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+    height: 100vh;
+    margin: 10px;  
+	width: 100%;
+	text-rendering: optimizeSpeed !important;
+
+
+
+  
+
+ 
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.rectangle{
+	position: relative;
+	width: 160vmin;
+	height:90vmin;
+	box-sizing: border-box;
+	border: black 2px;
+	color: #555;
+}
+.rectangle:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+
+}
+.content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+
+}
+
+
+	
+
+
+
+header {
+	background: var(--background-color);
+	grid-area: header;
+}
+
+nav {
+	background-color: #555;
+		
+	    width: 100%;
+		height: 65px;
+		position: fixed;
+		top: 0;
+		overflow: hidden;
+		line-height: 65px;
+		text-align: center;
+		z-index: 100;
+	  }
+	  .nav .container {
+		width: auto;
+		height: 100%;
+	  }
+	  .nav div.logo {
+		float: left;
+		max-width: 50%;
+		height: 150%;
+		padding-left: 1rem;
+	  }
+	  .nav div.logo img {
+		width: auto;
+		height: 100%;
+	  }
+	  
+	  .nav div.logo a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 2.5rem;
+	  }
+	  
+	  
+	  .nav div.popup a{
+		float: right;
+		max-width: 40%;
+		height: 100%;
+		padding-right: 5rem;
+
+	  }
+	  .popup img {
+		width: auto;
+		height: 100%;
+	  }
+	  
+	  .popup{
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+
+	  }
+	  .popup .popupcontent {
+		visibility: hidden;
+		width: 100%;
+		background-color: #555;
+		display: list-item;
+		color: #fff;
+		text-align: left;
+		position: static;
+		z-index: auto;
+		bottom: 0%;
+		
+		
+	  }
+	  .popup .popuptext::after {
+		content: "";
+		position: absolute;
+		top: 86px;
+		left: 50%;
+		margin-left: -5px;
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid #555;
+	  }
+	  .popup .show {
+		visibility: visible;
+		padding-left: 1rem;
+		
+		
+	  }
+		
+	  
+	  .nav div.basket a{
+		float: right;
+		max-width: 40%;
+		height: 100%;
+		padding-right: 1rem;
+		padding-left: 1rem;
+
+	  }
+	  .nav div.basket img {
+		width: auto;
+		height: 100%;
+	  }
+	  .nav div.basket a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 2.5rem;
+	  }
+	  
+	  .nav div.main_list {
+		height: 65px;
+		float: right;
+	  }
+	  
+	  .nav div.main_list ul {
+		width: 100%;
+		height: 65px;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .nav div.main_list ul li {
+		width: auto;
+		height: 65px;
+		padding: 0;
+		padding-right: 3rem;
+	  }
+	  
+	  .nav div.main_list ul li a {
+		text-decoration: none;
+		color: black;
+		line-height: 65px;
+		font-size: 1.3rem;
+	  }
+	  
+	  
+	  
+	  .navTrigger {
+		display: none;
+	  }
+	  
+	  .nav {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		-webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+}
+
+section {
+	background: #ABABAB;
+	grid-area: section;    
+}
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
+}
+
+footer {
+	background: var(--footer-color);
+	grid-area: footer;
+	width: 100%;
+		height: 500%;
+		position: relative;
+		line-height: 65px;
+		text-align: center;
+		text-decoration: none;
+		
+
+}
+.footer div.footerlogo{
+	 
+	float: left;
+	max-width: 50%;
+	height: 200%;
+	padding-left: 1rem;
+	  }
+ div.logo img {
+	width: auto;
+	height: 100%;
+	  }
+
+
+
+div.Payment{
+	position: absolute;
+  top: 100px;
+  left: 30px;
+  width: 200px
+  
+  
+
+
+
+
+}
+div.SocialMedia{
+	position: absolute;
+  top: 50px;
+  left:30px;
+  width: 200px;
+  
+	
+
+	
+}
+div.Datenschutz{
+	border-top: 1px solid rgb(9, 9, 9); width:450px;
+	position: absolute;
+  top: 50px;
+  left:300px;
+  width: 200px;
+	
+
+}
+div.AGB{
+	position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 200px;
+
+
+}
+div.Impressum{
+	position: absolute;
+  top: 150px;
+  left: 300px;
+  width: 200px;
+	
+}
+div.Account{
+	border-top: 1px solid rgb(9, 9, 9); width:450px;
+	position: absolute;
+  top: 50px;
+  left:600px;
+  width: 200px;
+  text-decoration: none;
+  color: black;
+
+	
+}
+div.Warenkorb{
+	position: absolute;
+  top: 100px;
+  left: 600px;
+  width: 200px;
+	
+}
+div.AboutUs{
+	border-top: 1px solid rgb(9, 9, 9); width:450px;
+	position: absolute;
+  top: 50px;
+  left:900px;
+  width: 200px;
+
+}
+div.Help{
+	position: absolute;
+  top: 100px;
+  left: 900px;
+  width: 200px;
+  text-decoration: none;
+  color: black;
+
+}
+ul.SocialMedia{
+	display:flex;
+	gap:20px;
+	position: absolute;
+  top: 50px;
+  left:0px;
+  width: 10px;
+  list-style-type: none;
+}
+ul.Payment{
+	display:flex;
+	gap:20px;
+	position: absolute;
+  top: 50px;
+  left:20px;
+  width: 10px;
+  list-style-type: none;
+
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+
+
+
+.ticketcategories {
+	display: flex;
+	margin: 10px;
+	padding: 0;
+	gap: 2rem;
+	list-style: none;
+	text-align: center;
+	
+	
+	
+	
+	
+	
+}
+
+.ticketcategories li img{
+	width: 250px;
+	flex-grow: 1;
+	height: 10em;
+	
+	justify-content: space-between;
+	align-items: center;
+	
+	
+	
+	
+}
+.ticketcategories a{
+	
+	text-align: center;
+	
+	
+	text-decoration: none;
+	color: black;
+
+}
+

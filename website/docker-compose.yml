@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  db:
+    image: postgres:15.0
+    restart: unless-stopped 
+    environment:
+      - DEBUG=debug
+      - POSTGRES_USER=joelmoyal
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=TicketDb
+    ports:
+      - '5432'
+      
+    volumes: 
+      - prj1_db:/var/lib/postgresql/data
+  web:
+    image: sebivenlo/prj1-web:1.0
+    restart: unless-stopped 
+    user: 123:456
+    ports:
+      - '80'
+    volumes:
+      - '/var/www/html'
+    depends_on:
+      - db
+volumes:
+  prj1_db:
+    driver: local
+  prj1_web:
+    driver: local
