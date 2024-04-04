@@ -40,13 +40,13 @@ include_once 'dbconnect.php';
           <li class="navlink"><a href="aboutus.html">About us</a></li>
           <li class="navlink"><a href="sellyourtickets.php">Sell your Tickets!</a></li>
           <div class="basket">
-          <a href=".html/basket.html"><img src="image/basket.png"></a></li>
+          <a href="basket.html"><img src="image/basket.png"></a></li>
         </div>
         
         <div class="popup" onclick="myFunction()"> <img src="image/profilebannner.png">
           <span class="popupcontent" id="profilepopup">
-            <li class="popuplink"><a href="./html/accountpage.html"></a>My Account</li>
-            <li class="popuplink"><a href="./html/myorders.html"></a>My Orders</li>
+            <li class="popuplink"><a href="/html/accountpage.html"></a>My Account</li>
+            <li class="popuplink"><a href="/html/myorders.html"></a>My Orders</li>
             <li class="popuplink">Log out</li>
           </span>
 
@@ -105,23 +105,11 @@ include_once 'dbconnect.php';
     </div>
 
   </div>
-    
-
-  
-	
-
-
-	
-
-
 </body>
 <footer>
  <div class="footerlogo">
   <img src="image/Unbenannt-3-[Wiederhergestellt].png" style="width:170px;height:110px;float:left;">
-  
-
 </div>
- 
   <div class="Datenschutz">
    <a href="dataprotection.html"> <p style="font-size:15px;">Data Protection</p></a>
   </div class="Datenschutz">

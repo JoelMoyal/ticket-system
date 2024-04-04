@@ -113,7 +113,7 @@
     <p style="font-size:15px;"></a>Data Protection</p>
   </div class="Datenschutz">
   <div class="AGB">
-    <p style="font-size:15px;"> AGBs</p>
+    <p style="font-size:15px;">AGBs</p>
     </div class="AGB">
   </div class="AGB">
   <div class="Impressum">

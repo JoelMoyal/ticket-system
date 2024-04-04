@@ -31,7 +31,7 @@
     }
     $eventExists = 0;
     $sql = "SELECT name FROM EVENTS WHERE name = :name";
-    $stmt = $conn->prepare($sql);
+    $stmt = prepare($sql);
     $stmt->bindValue(":name", $_POST["eventname"]);
     $stmt->execute();
     if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

@@ -17,13 +17,8 @@ body {
     margin: 10px;  
 	width: 100%;
 	text-rendering: optimizeSpeed !important;
-
-
-
-  
-
- 
 }
+
 .container{
 	width: 100%;
 	height: 100%;
@@ -53,11 +48,6 @@ body {
 	
 
 }
-
-
-	
-
-
 
 header {
 	background: var(--background-color);
@@ -97,7 +87,6 @@ nav {
 		font-size: 2.5rem;
 	  }
 	  
-	  
 	  .nav div.popup a{
 		float: right;
 		max-width: 40%;
@@ -126,8 +115,7 @@ nav {
 		position: static;
 		z-index: auto;
 		bottom: 0%;
-		
-		
+	
 	  }
 	  .popup .popuptext::after {
 		content: "";
@@ -144,18 +132,13 @@ nav {
 	  .popup .show {
 		visibility: visible;
 		padding-left: 1rem;
-		
-		
 	  }
-		
-	  
 	  .nav div.basket a{
 		float: right;
 		max-width: 40%;
 		height: 100%;
 		padding-right: 1rem;
 		padding-left: 1rem;
-
 	  }
 	  .nav div.basket img {
 		width: auto;
@@ -194,9 +177,7 @@ nav {
 		line-height: 65px;
 		font-size: 1.3rem;
 	  }
-	  
-	  
-	  
+
 	  .navTrigger {
 		display: none;
 	  }
@@ -227,44 +208,29 @@ footer {
 		line-height: 65px;
 		text-align: center;
 		text-decoration: none;
-		
-
+	
 }
-.footer div.footerlogo{
-	 
+.footer div.footerlogo{	 
 	float: left;
 	max-width: 50%;
 	height: 200%;
 	padding-left: 1rem;
 	  }
- div.logo img {
+div.logo img {
 	width: auto;
 	height: 100%;
 	  }
-
-
-
 div.Payment{
 	position: absolute;
   top: 100px;
   left: 30px;
   width: 200px
-  
-  
-
-
-
-
 }
 div.SocialMedia{
 	position: absolute;
   top: 50px;
   left:30px;
-  width: 200px;
-  
-	
-
-	
+  width: 200px;	
 }
 div.Datenschutz{
 	border-top: 1px solid rgb(9, 9, 9); width:450px;
@@ -272,8 +238,6 @@ div.Datenschutz{
   top: 50px;
   left:300px;
   width: 200px;
-	
-
 }
 div.AGB{
 	position: absolute;
